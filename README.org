@@ -22,3 +22,12 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
    make
    sudo make install
    #+END_SRC
+
+** Patches
+
+*** noborder
+
+   #+BEGIN_SRC
+   wget https://dwm.suckless.org/patches/noborder/dwm-noborder-20170207-bb3bd6f.diff
+   git apply dwm-noborder-20170207-bb3bd6f.diff
+   #+END_SRC
