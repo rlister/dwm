@@ -31,3 +31,12 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
    wget https://dwm.suckless.org/patches/noborder/dwm-noborder-20170207-bb3bd6f.diff
    git apply dwm-noborder-20170207-bb3bd6f.diff
    #+END_SRC
+
+*** focusonnetactive
+
+   Needed to focus windows selected in e.g. `rofi`.
+
+   #+BEGIN_SRC
+   https://dwm.suckless.org/patches/focusonnetactive/dwm-focusonnetactive-2017-12-24-3756f7f.diff
+   git apply dwm-focusonnetactive-2017-12-24-3756f7f.diff
+   #+END_SRC
