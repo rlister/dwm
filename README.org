@@ -50,3 +50,11 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
 
     This creates ~layouts.c~, and patches ~config.def.h~. Copy the
     changed lines from the latter to my ~config.h~.
+
+*** classtitle
+
+    This is my patch to use short window CLASS rather than full TITLE in the statusbar.
+
+    #+BEGIN_SRC
+    git apply dwm-classtitle-20190305-cb3f58a.diff
+    #+END_SRC
