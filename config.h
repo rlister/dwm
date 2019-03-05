@@ -66,6 +66,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
+static const char *roficmd[]  = { "rofi", "-show", "combi" };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -102,6 +103,15 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+
+        /* my extras */
+        { META,                         XK_space,  spawn,          {.v = roficmd } },
+	{ META,                         XK_Tab,    focusstack,     {.i = +1 } },
+	{ META,                         XK_j,      focusstack,     {.i = +1 } },
+	{ META,                         XK_k,      focusstack,     {.i = -1 } },
+	{ META,                         XK_F9,     setlayout,      {.v = &layouts[0]} },
+	{ META,                         XK_F10,    setlayout,      {.v = &layouts[1]} },
+	{ META,                         XK_F11,    setlayout,      {.v = &layouts[2]} },
 };
 
 /* button definitions */
@@ -120,4 +130,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
