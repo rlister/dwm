@@ -40,3 +40,13 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
    https://dwm.suckless.org/patches/focusonnetactive/dwm-focusonnetactive-2017-12-24-3756f7f.diff
    git apply dwm-focusonnetactive-2017-12-24-3756f7f.diff
    #+END_SRC
+
+*** gridmode
+
+    #+BEGIN_SRC
+    wget https://dwm.suckless.org/patches/gridmode/dwm-gridmode-20170909-ceac8c9.diff
+    git apply dwm-gridmode-20170909-ceac8c9.diff
+    #+END_SRC
+
+    This creates ~layouts.c~, and patches ~config.def.h~. Copy the
+    changed lines from the latter to my ~config.h~.
