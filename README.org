@@ -13,3 +13,12 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
    git rebase --continue
    git push origin
    #+END_SRC
+
+
+** Install
+
+   #+BEGIN_SRC
+   git checkout hacks
+   make
+   sudo make install
+   #+END_SRC
