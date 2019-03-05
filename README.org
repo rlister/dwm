@@ -1,0 +1,15 @@
+* My dwm hacks
+
+Guide here: https://dwm.suckless.org/customisation/patches_in_git/
+
+** Updates
+
+```
+git checkout master
+git pull
+git checkout hacks
+git rebase --preserve-merges master
+... fix merge conflicts ...
+git rebase --continue
+git push origin
+```
