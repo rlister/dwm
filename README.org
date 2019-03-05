@@ -6,7 +6,7 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
 
    #+BEGIN_SRC
    git checkout master
-   git pull
+   git pull -v --all
    git checkout hacks
    git rebase --preserve-merges master
    ... fix merge conflicts ...
