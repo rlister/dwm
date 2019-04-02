@@ -116,14 +116,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 
         /* my extras */
-        { META,                         XK_space,  spawn,          {.v = roficmd } },
-	{ META,                         XK_Tab,    focusstack,     {.i = +1 } },
-	{ META,                         XK_j,      focusstack,     {.i = +1 } },
-	{ META,                         XK_k,      focusstack,     {.i = -1 } },
-	{ META,                         XK_F9,     setlayout,      {.v = &layouts[0]} },
-	{ META,                         XK_F10,    setlayout,      {.v = &layouts[1]} },
-	{ META,                         XK_F11,    setlayout,      {.v = &layouts[2]} },
-        { META,                         XK_F12,    setlayout,      {.v = &layouts[3]} },
+        { MODKEY,                       XK_space,  spawn,          {.v = roficmd } },
+	{ MODKEY|ControlMask,           XK_space,  setlayout,      {0} },
         { MODKEY,                       XK_p,      spawn,          {.v = passmenu } },
 };
 
