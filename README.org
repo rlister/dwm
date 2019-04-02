@@ -58,3 +58,11 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
     #+BEGIN_SRC
     git apply dwm-classtitle-20190305-cb3f58a.diff
     #+END_SRC
+*** deckmode
+
+    #+BEGIN_SRC
+    wget https://dwm.suckless.org/patches/deck/dwm-deck-20170909-ceac8c9.diff
+    #+END_SRC
+
+    Edits to ~layouts.c~ conflicts with gridmode, so just paste in the
+    function and cherry-pick desired keys for ~config.h~.
