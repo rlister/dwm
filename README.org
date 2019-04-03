@@ -14,7 +14,6 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
    git push origin
    #+END_SRC
 
-
 ** Install
 
    #+BEGIN_SRC
@@ -66,3 +65,12 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
 
     Edits to ~layouts.c~ conflicts with gridmode, so just paste in the
     function and cherry-pick desired keys for ~config.h~.
+*** attachaside
+
+    #+BEGIN_SRC
+    wget https://dwm.suckless.org/patches/attachaside/dwm-attachaside-20180126-db22360.diff
+    git apply dwm-attachaside-20180126-db22360.diff
+    #+END_SRC
+
+    If applied after above patches, this will likely "fail" due to
+    line number mismatches, but it should still be fine to compile.
