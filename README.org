@@ -22,6 +22,12 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
    sudo make install
    #+END_SRC
 
+** Test
+
+  #+begin_src
+  startx -- /usr/bin/Xephyr -screen 2560x1440 :1
+  #+end_src
+
 ** Patches
 
 *** noborder
