@@ -57,6 +57,7 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
     #+BEGIN_SRC
     git apply dwm-classtitle-20190305-cb3f58a.diff
     #+END_SRC
+
 *** deckmode
 
     #+BEGIN_SRC
@@ -65,6 +66,7 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
 
     Edits to ~layouts.c~ conflicts with gridmode, so just paste in the
     function and cherry-pick desired keys for ~config.h~.
+
 *** attachaside
 
     #+BEGIN_SRC
@@ -74,3 +76,19 @@ Guide here: https://dwm.suckless.org/customisation/patches_in_git/
 
     If applied after above patches, this will likely "fail" due to
     line number mismatches, but it should still be fine to compile.
+
+*** three column
+
+#+begin_src
+wget https://dwm.suckless.org/patches/three-column/tcl.c
+#+end_src
+
+and add to ~config.h~:
+
+#+begin_src
+#include "tcl.c"
+static const Layout layouts[] = {
+  ...
+  { "[C]",      tcl },     /* three column layout */
+};
+#+end_src
