@@ -74,8 +74,6 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[] = { "termite", NULL };
 static const char *roficmd[] = { "rofi", "-show", "combi", NULL };
-static const char *passcmd[] = { "passmenu", NULL };
-static const char *clipcmd[] = { "CM_LAUNCHER=rofi", "clipmenu", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -121,8 +119,6 @@ static Key keys[] = {
         /* my extras */
         { MODKEY,                       XK_space,  spawn,          {.v = roficmd } },
 	{ MODKEY|ControlMask,           XK_space,  setlayout,      {0} },
-        { MODKEY,                       XK_p,      spawn,          {.v = passcmd } },
-        { MODKEY,                       XK_c,      spawn,          {.v = clipcmd } },
 };
 
 /* button definitions */
