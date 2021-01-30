@@ -90,7 +90,7 @@ Replace =layout()= in =config.h=:
           { "[T]", tile }, /* first entry is default */
           { "[F]", floating },
           { "[M]", monocle },
-          { "[C]", Tcl },
+          { "[C]", tcl },
   };
 #+end_src
 
