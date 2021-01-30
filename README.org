@@ -4,6 +4,8 @@ My patches and hacks to [[https://dwm.suckless.org/][dwm]].
 
 Patching guide: https://dwm.suckless.org/customisation/patches_in_git/.
 
+[[file:screenshot.png]]
+
 ** Branches
 
 =main= is my default branch, containing my hacks and patches.
