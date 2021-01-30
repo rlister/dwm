@@ -139,3 +139,14 @@ Add keybindings in =config.h=:
   { MODKEY|ShiftMask,             XK_n,      movestack,      {.i = +1 } },
   { MODKEY|ShiftMask,             XK_e,      movestack,      {.i = -1 } },
 #+end_src
+
+*** pertag
+
+- https://dwm.suckless.org/patches/pertag/
+
+Keep layout per tag, instead of changing globally.
+
+#+begin_src sh
+  wget https://dwm.suckless.org/patches/pertag/dwm-pertag-20200914-61bb8b2.diff
+  git apply dwm-pertag-20200914-61bb8b2.diff
+#+end_src
