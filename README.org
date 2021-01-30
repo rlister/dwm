@@ -116,3 +116,26 @@ Extra movement keys for Colemak home row.
 	{ MODKEY,                       XK_n,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_e,      focusstack,     {.i = -1 } },
 #+end_src
+
+*** movestack
+
+- https://dwm.suckless.org/patches/movestack/
+
+Move clients around in the stack.
+
+This patch doesn't apply, but extract the file =movestack.c= from the [[https://dwm.suckless.org/patches/movestack/dwm-movestack-6.1.diff][diff]].
+
+Add include in =config.h=:
+
+#+begin_src c
+  #include "movestack.c"
+#+end_src
+
+Add keybindings in =config.h=:
+
+#+begin_src c
+  { MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
+  { MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
+  { MODKEY|ShiftMask,             XK_n,      movestack,      {.i = +1 } },
+  { MODKEY|ShiftMask,             XK_e,      movestack,      {.i = -1 } },
+#+end_src

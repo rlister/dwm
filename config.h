@@ -39,6 +39,7 @@ static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
 #include "tcl.c"
+#include "movestack.c"
 static const Layout layouts[] = {
 	/* symbol               function */
 	{ "[T]", tile }, /* first entry is default */
@@ -72,6 +73,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_n,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_e,      focusstack,     {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_n,      movestack,      {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_e,      movestack,      {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
