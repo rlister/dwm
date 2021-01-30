@@ -51,6 +51,15 @@ Pull-request feature branch against =main=.
 
 ** Patches
 
+*** modkey
+
+Change modkey to Super.
+
+#+begin_src sh
+  /* key definitions */
+  #define MODKEY Mod4Mask
+#+end_src
+
 *** noborder
 
 - https://dwm.suckless.org/patches/noborder/
