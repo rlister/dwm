@@ -1,34 +1,44 @@
 * My dwm hacks
 
-Guide here: https://dwm.suckless.org/customisation/patches_in_git/
+My patches and hacks to [[https://dwm.suckless.org/][dwm]].
+
+Patching guide: https://dwm.suckless.org/customisation/patches_in_git/.
+
+** Branches
+
+=main= is my default branch, containing my hacks and patches.
+
+=master= tracks upstream [[http://git.suckless.org/dwm/][dwm]].
 
 ** Updates
 
 Merge upstream updates to [[https://dwm.suckless.org/][dwm]]:
 
 #+begin_src sh
+  git checkout master
   git remote add upstream git://git.suckless.org/dwm
   git fetch upstream
-  git checkout master
   git merge upstream/master
 #+end_src
 
-Merge updates into patch branch:
+Merge updates into feature branch:
 
 #+begin_src sh
   git checkout master
   git pull -v --all
-  git checkout <branch>
+  git checkout <feature-branch>
   git rebase --preserve-merges master
   ... fix merge conflicts ...
   git rebase --continue
   git push origin
 #+end_src
 
+Pull-request feature branch against =main=.
+
 ** Install
 
 #+begin_src sh
-  git checkout <branch>
+  git checkout main
   make
   sudo make install
 #+end_src
