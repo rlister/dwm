@@ -107,3 +107,12 @@ Appearance mods: border, font and colour.
           [SchemeNorm] = { col_gray3, col_black, col_black },
           [SchemeSel]  = { col_green, col_black, col_gray2 },
 #+end_src
+
+*** colemak
+
+Extra movement keys for Colemak home row.
+
+#+begin_src c
+	{ MODKEY,                       XK_n,      focusstack,     {.i = +1 } },
+	{ MODKEY,                       XK_e,      focusstack,     {.i = -1 } },
+#+end_src
