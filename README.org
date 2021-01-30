@@ -38,3 +38,16 @@ Merge updates into patch branch:
 #+begin_src sh
   startx -- /usr/bin/Xephyr -screen 2560x1440 :1
 #+end_src
+
+** Patches
+
+*** noborder
+
+- https://dwm.suckless.org/patches/noborder/
+
+Remove border on single visible window, fixed version.
+
+#+begin_src sh
+  wget https://dwm.suckless.org/patches/noborder/dwm-noborderfloatingfix-6.2.diff
+  git apply dwm-noborderfloatingfix-6.2.diff
+#+end_src
