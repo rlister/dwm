@@ -51,3 +51,32 @@ Remove border on single visible window, fixed version.
   wget https://dwm.suckless.org/patches/noborder/dwm-noborderfloatingfix-6.2.diff
   git apply dwm-noborderfloatingfix-6.2.diff
 #+end_src
+
+*** three column
+
+- https://dwm.suckless.org/patches/three-column/
+
+Three-columns with centered master, for widescreen monitor.
+
+#+begin_src sh
+  wget https://dwm.suckless.org/patches/three-column/tcl.c
+#+end_src
+
+Replace =layout()= in =config.h=:
+
+#+begin_src c
+  #include "tcl.c"
+  static Layout layout[] = {
+          /* symbol               function */
+          { "[T]", tile }, /* first entry is default */
+          { "[F]", floating },
+          { "[M]", monocle },
+          { "[C]", Tcl },
+  };
+#+end_src
+
+Add keybinding in =keys[]=:
+
+#+begin_src c
+  { MODKEY,                       XK_c,      setlayout,      {.v = &layouts[3]} },
+#+end_src
