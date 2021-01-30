@@ -80,3 +80,14 @@ Add keybinding in =keys[]=:
 #+begin_src c
   { MODKEY,                       XK_c,      setlayout,      {.v = &layouts[3]} },
 #+end_src
+
+*** classtitle
+
+Modify first statement in =updatetitle()= to use short window CLASS
+rather than full TITLE in the statusbar:
+
+#+begin_src c
+-	if (!gettextprop(c->win, netatom[NetWMName], c->name, sizeof c->name))
+-		gettextprop(c->win, XA_WM_NAME, c->name, sizeof c->name);
++       gettextprop(c->win, XA_WM_CLASS, c->name, sizeof c->name);
+#+end_src
