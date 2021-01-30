@@ -91,3 +91,19 @@ rather than full TITLE in the statusbar:
 -		gettextprop(c->win, XA_WM_NAME, c->name, sizeof c->name);
 +       gettextprop(c->win, XA_WM_CLASS, c->name, sizeof c->name);
 #+end_src
+
+*** appearance
+
+Appearance mods: border, font and colour.
+
+#+begin_src c
+  static const unsigned int borderpx  = 3;        /* border pixel of windows */
+  static const char *fonts[]          = { "xos4 Terminus:size=12" };
+  static const char dmenufont[]       = "xos4 Terminus:size=12";
+  static const char col_black[]       = "#000000";
+  static const char col_green[]       = "#98fb98"; /* PaleGreen */
+  static const char *colors[][3]      = {
+          /*               fg         bg         border   */
+          [SchemeNorm] = { col_gray3, col_black, col_black },
+          [SchemeSel]  = { col_green, col_black, col_gray2 },
+#+end_src
