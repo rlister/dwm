@@ -37,10 +37,10 @@ static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
 static const Layout layouts[] = {
-	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	/* symbol               function */
+	{ "[T]", tile }, /* first entry is default */
+	{ "[F]", NULL }, /* no layout function means floating behavior */
+	{ "[M]", monocle },
 };
 
 /* key definitions */
