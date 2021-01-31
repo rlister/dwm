@@ -62,6 +62,18 @@ Change modkey to Super.
   #define MODKEY Mod4Mask
 #+end_src
 
+*** resizehints
+
+With =resizehints= on, some text-based windows, such as emacs and
+terminals, will not fill their tile. This is particularly a problem in
+monocle, where the screen will not be filled.
+
+In =config.h=:
+
+#+begin_src sh
+  static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
+#+end_src
+
 *** noborder
 
 - https://dwm.suckless.org/patches/noborder/
