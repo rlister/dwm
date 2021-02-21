@@ -183,3 +183,10 @@ Keep layout per tag, instead of changing globally.
   wget https://dwm.suckless.org/patches/pertag/dwm-pertag-20200914-61bb8b2.diff
   git apply dwm-pertag-20200914-61bb8b2.diff
 #+end_src
+
+*** attachtop
+
+#+begin_src sh
+  wget https://dwm.suckless.org/patches/attachtop/dwm-attachtop-6.2.diff
+  git apply dwm-attachtop-6.2.diff
+#+end_src
