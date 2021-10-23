@@ -48,6 +48,7 @@ Pull-request feature branch against =main=.
 ** Test
 
 #+begin_src sh
+  sudo pacman -S xorg-server-xephyr
   startx -- /usr/bin/Xephyr -screen 2560x1440 :1
 #+end_src
 
