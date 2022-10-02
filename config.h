@@ -44,11 +44,12 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 #include "tcl.c"
 #include "movestack.c"
 static const Layout layouts[] = {
-	/* symbol               function */
-	{ "[T]", tile }, /* first entry is default */
+  /* first entry is default */
+	/* symbol, function */
+	{ "[C]", tcl },
 	{ "[F]", NULL }, /* no layout function means floating behavior */
 	{ "[M]", monocle },
-	{ "[C]", tcl },
+	{ "[T]", tile },
 };
 
 /* key definitions */
