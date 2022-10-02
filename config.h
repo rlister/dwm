@@ -31,7 +31,9 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "zoom",     "zoom",     NULL,       1 << 8,       0,           -1 },
+	{ "zoom",     NULL,       NULL,       1 << 8,       1,           -1 },
+	/* { "zoom",     "zoom",     NULL,       1 << 8,       0,           -1 }, */
+	/* { NULL,       NULL,       "Zoom Cloud Meetings",       1 << 8,       0,           -1 }, */
 	{ "start",    NULL,       NULL,       1 << 8,       1,           -1 },
 	{ "join",     NULL,       NULL,       1 << 8,       1,           -1 },
 	{ "Steam",    NULL,       NULL,       0,            1,           -1 },
