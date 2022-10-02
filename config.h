@@ -34,6 +34,7 @@ static const Rule rules[] = {
 	{ "zoom",     "zoom",     NULL,       1 << 8,       0,           -1 },
 	{ "start",    NULL,       NULL,       1 << 8,       1,           -1 },
 	{ "join",     NULL,       NULL,       1 << 8,       1,           -1 },
+	{ "Steam",    NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
