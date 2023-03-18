@@ -191,3 +191,10 @@ Keep layout per tag, instead of changing globally.
   wget https://dwm.suckless.org/patches/attachabove/dwm-attachabove-6.2-20200421.diff
   git apply dwm-attachabove-6.2-20200421.diff -p4
 #+end_src
+
+*** rotatetags
+
+#+begin_src sh
+  wget wget https://dwm.suckless.org/patches/rotatetags/dwm-rotatetags-6.2.diff
+  git apply dwm-rotatetags-6.2.diff
+#+end_src
