@@ -4,7 +4,7 @@ My patches and hacks to [dwm](https://dwm.suckless.org/).
 
 Patching guide: <https://dwm.suckless.org/customisation/patches_in_git/>.
 
-![img](screenshot.png)
+![screenshot](./screenshot.png)
 
 ## Branches
 
